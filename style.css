@@ -12,7 +12,7 @@ header{
 	min-height: 100px;
 }
 header a{
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 }
 
 
@@ -20,21 +20,22 @@ header a{
 
 /*###########################    Index Main     ##################################*/
 .main{
-/*	padding: 0;
+	/*padding: 0;
 	margin-top: 0;
 	background: url(images/8.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity: 0.8;
-	height: 760px;*/
+	opacity: 0.8;*/
+	height: 510px;
 }
 
 footer{
 	text-align: center;
 	color: white;
-	padding: 2px;
+	padding: 5px;
+	list-height: 1rem;
 }
 
 
@@ -90,6 +91,8 @@ span{
 }
 
 .lunchBody{
+	widows: 100%;
+	height: 560px;
 	background-color: white;
 	overflow: auto;
 }
