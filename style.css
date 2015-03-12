@@ -5,97 +5,46 @@
 body, html{
 
 }
-
+/*###########################    Navigation     ##################################*/
 header{
 	background-color: #ff3385;
-	height: 20%;
 	position: relative;
 	min-height: 100px;
 }
-#mainLogo{
-
-	/*width: 20%;*/
-	/*min-width: 200px;*/
-/*	margin-left: 40%;
-	display: inline-block;
-	border: 5px solid white;*/
+header img{
+	margin-left: 10px;
 }
 
-.mainLogo img{
-
+#phoneNum a{
+	/*font-size: 5rem;*/
 }
+
+
+
+/*###########################    Index Main     ##################################*/
 .main{
-  background: url(images/8.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.8;
-  height: 760px;
+/*	padding: 0;
+	margin-top: 0;
+	background: url(images/8.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.8;
+	height: 760px;*/
 }
 
 footer{
-	border: 2px solid yellow;
-	text-align: center
-}
-
-
-#phoneNum{
-	font-weight: bold;
-}
-/*###########################    Navigation     ##################################*/
-#myNavbar{
-	color:red;
-}
-/*#phone span{
-	font-size: 1em;
-}
-
-#phone{
-	display: inline-block;
-	width: 28%;
-	width: auto;
-}
-#phone a{
+	text-align: center;
 	color: white;
-	font-size: 3.6rem;
-	position: absolute;
-	margin-top: 2%;
-	margin-left: 25%;
-	background: #333;
-	padding: 5px 10px;
-	border-radius: 5px;
-}
-#phone a:hover{
-	color: orange;
-	text-decoration: none;
-	font-weight: bold;
-}
-#logofinal{
-	margin-left: 35%;
-	height: auto;
-
-}*/
-/*
-.navigation{
-	margin-top: 110px;
-
+	padding: 2px;
 }
 
-.navigation li{
-}
 
-.navigation li a{
-	margin-left: 100px;
-	color: white;
-}
 
-.brand img{
-	height: 120px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}*/
+
+
+
 
 /*###########################   menu     ##################################*/
 .menuItems{
