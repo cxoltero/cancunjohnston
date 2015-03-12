@@ -11,7 +11,7 @@ header{
 	position: relative;
 	min-height: 100px;
 }
-header img{
+header a{
 	margin-left: 10px;
 }
 
