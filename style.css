@@ -129,3 +129,21 @@ span{
 
 
 
+/*###########################   Accordion Slidder   ##################################*/
+
+.faq li{
+	padding: 20px;
+}
+
+.faq li.category{
+	background: #eee;
+	font-weight: bold;
+	font-size: 120%;
+	border-bottom: 1px #ddd solid;
+	cursor: pointer;
+}
+
+.faq li.items{
+	background: #ddd;
+	display: none;
+}
