@@ -11,22 +11,21 @@ header{
 	position: relative;
 	min-height: 75px;	
 }
-header img{
-	margin: 0 auto;
+header{
+	
 }
 
 
 /*###########################    Index Main     ##################################*/
 .main{
-	padding: 0;
+	padding: 20px 0;
 	margin-top: 0;
-	background: url(images/background.jpg) no-repeat center center fixed; 
+	/*background: url(images/background.jpg) no-repeat center center fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	/*opacity: 0.8;*/
-	height: 510px;
+	min-height: 510px;
 }
 
 footer{
