@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body, html{
-
+	background-color: #ECAE48;
 }
 /*###########################    Navigation     ##################################*/
 header{
@@ -14,8 +14,6 @@ header{
 header a{
 	/*margin-left: 10px;*/
 }
-
-
 
 
 /*###########################    Index Main     ##################################*/
@@ -38,9 +36,9 @@ footer{
 	list-height: 1rem;
 }
 
-
-
-
+#myFrame{
+	margin-top: 10px;
+}
 
 
 
