@@ -3,22 +3,19 @@
 	padding: 0;
 }
 body, html{
-	background-color: #ECAE48;
+	background-color: #EBE188;
 }
 /*###########################    Navigation     ##################################*/
 header{
-	background-color: #ff3385;
+	/*background-color: #ff3385;*/
+	background-color: #A8356B;
 	position: relative;
 	min-height: 75px;	
 }
-header{
-	
-}
-
 
 /*###########################    Index Main     ##################################*/
 .main{
-	padding: 20px 0;
+	padding: 20px 20px;
 	margin-top: 0;
 	/*background: url(images/background.jpg) no-repeat center center fixed; */
 	-webkit-background-size: cover;
@@ -26,6 +23,7 @@ header{
 	-o-background-size: cover;
 	background-size: cover;
 	min-height: 510px;
+	/*background-color: #e8e8e8;*/
 }
 
 footer{
@@ -39,7 +37,9 @@ footer{
 	margin-top: 10px;
 }
 
+#hours{
 
+}
 
 /*###########################   menu     ##################################*/
 .menuItems{
@@ -54,16 +54,30 @@ footer{
 	background-color: rgba(255, 51, 133, 1);
 	box-shadow: 0px 0px 15px #888888
 }
-.heading{
+
+.lunchHeading{
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	top: 15px;
-	font-size: 7rem;
+	font-size: 5rem;
 	/*height: 150px;*/
 	margin-top: 0;
 	/*background: green;*/
 	/*color: white;*/
 	padding-top: 3%;
+	color: #7A2B7C;
+}
+.heading{
+	font-family: 'Lobster', cursive;
+	/*text-align: center;*/
+	top: 15px;
+	font-size: 5rem;
+	/*height: 150px;*/
+	margin-top: 0;
+	/*background: green;*/
+	/*color: white;*/
+	padding-top: 3%;
+	color: #7A2B7C;
 }
 .menuItems img{
 	width: 90%;
@@ -80,6 +94,10 @@ footer{
 }
 span{
 	font-size: 1.5rem;
+}
+
+.combos{
+	font-weight: bold;
 }
 
 /*###########################   lunch menu     ##################################*/
