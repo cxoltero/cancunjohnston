@@ -3,27 +3,51 @@
 	padding: 0;
 }
 body, html{
-	background-color: #EBE188;
+	background-color: #fff;
+	padding-bottom: 70px;
+	min-height: 900px;
+	height: 100%;
 }
+
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /*###########################    Navigation     ##################################*/
 header{
-	/*background-color: #ff3385;*/
-	background-color: #A8356B;
 	position: relative;
 	min-height: 75px;	
 }
-
+#phoneNum{
+	color: red;
+	margin-left: 10%;
+	float: right;
+	font-weight: bold;
+	padding-left: 35%;
+}
 /*###########################    Index Main     ##################################*/
 .main{
-	padding: 20px 20px;
 	margin-top: 0;
-	/*background: url(images/background.jpg) no-repeat center center fixed; */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-height: 510px;
-	/*background-color: #e8e8e8;*/
+	padding-top: 5%;
 }
 
 footer{
@@ -31,6 +55,7 @@ footer{
 	color: white;
 	padding: 5px;
 	list-height: 1rem;
+	margin-top: 15%;
 }
 
 #myFrame{
@@ -60,10 +85,7 @@ footer{
 	text-align: center;
 	top: 15px;
 	font-size: 5rem;
-	/*height: 150px;*/
 	margin-top: 0;
-	/*background: green;*/
-	/*color: white;*/
 	padding-top: 3%;
 	color: #7A2B7C;
 }
@@ -84,14 +106,6 @@ footer{
 	height: 200px;
 	margin-left: 5%;
 }
-.back{
-  background: url(images/background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.8;
-}
 span{
 	font-size: 1.5rem;
 }
@@ -106,10 +120,11 @@ span{
 }
 
 .lunchBody{
+	margin-top: 50px;
 	widows: 100%;
-	height: 560px;
 	background-color: white;
-	overflow: auto;
+	overflow: hidden;
+	background-image: ;
 }
 
 /*###########################   diner menu     ##################################*/
