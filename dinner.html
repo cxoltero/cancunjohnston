@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Diner Menu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Cancun Mexican Restaurant</title>
@@ -15,36 +14,29 @@
 
 </head>
 <body>
-<header>
-	<div class="container">
-		<a href="index.html">
-		    <img src="images/logofinal.png" alt="logo" id="mainLogo" class="img-responsive center-block">
-	    </a>
-	</div>
-</header>
-<nav class="navbar-inverse">
-	<div class="container">
+<nav class="navbar-inverse navbar-fixed-top navix" >
+	<div class="container lunch">
 	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#burguer">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <!-- <a class="navbar-brand" href="#" id="logo">Cancun Mexican Restaurant</a> -->
+	      <a class="navbar-brand active" href="index.html" id="logo" title="Cancun Mexican Restaurant"><img style="max-width:100px; margin-top: -17px; "
+             src="images/logofinal.png"></a>
 	    </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <!-- <! Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="burguer">
 	      <ul class="nav navbar-nav">
-	        <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+	        <!-- <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li> -->
 	        <!-- <li><a href="#">About</a></li> -->
-	        <li class="dropdown" class="active">
+	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menus <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
-	            <li class="active"><a href="lunch.html">Lunch Menu</a></li>
+	            <li><a href="lunch.html">Lunch Menu</a></li>
 	            <li><a href="dinner.html">Dinner Menu</a></li>
 	            <li><a href="#">Drinks Menu</a></li>
 
@@ -59,18 +51,37 @@
 
 	          </ul>
 	        </li>
+	        <li><a href="#">Events</a></li>
 	        <li><a href="#">Directions</a></li>
-	        <li><a href="#">Contact Us</a></li>
-	      </ul>
-
-	      <ul class="nav navbar-nav navbar-right">
-	        <li id="phoneNum"><a href="tel:1-401-232-0844"><span class="glyphicon glyphicon-earphone" > 401-232-0844</span></a></li>
-			<li><a href="https://www.facebook.com/CancunMexicanRestaurant" target="_blank"><i class="fa fa-facebook-official" id="facebook"></i></a></li>
+	        <li><a href="#myModal" role="button" data-toggle="modal">Contact Us</a></li>
+	        <li ><a href="tel:1-401-232-0844"  id="phoneNum"> <span class="glyphicon glyphicon-earphone "></span>  Order Now</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</div>
 </nav>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>	
 <div class="back">
 <div class="container">
 	<div class="dinerBody">

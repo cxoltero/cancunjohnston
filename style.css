@@ -12,6 +12,11 @@ small{
 	font-size: 8px;
 }
 
+.icon-prev, .icon-next{
+	font-size: 100px !important;
+	color: white;
+}
+
 
 .carousel,
 .item,
@@ -45,7 +50,6 @@ header{
 	margin-left: 10%;
 	float: right;
 	font-weight: bold;
-	/*padding-left: 35%;*/
 }
 /*###########################    Index Main     ##################################*/
 .main{
@@ -159,11 +163,6 @@ span{
 #appetizers{
 	background-color: red;
 }
-#facebook {
-
-}
-
-
 
 /*###########################   Accordion Slidder   ##################################*/
 
@@ -187,4 +186,18 @@ span{
 #hours{
 	color: #DF0174;
 	font-size: 2rem;
+}
+
+
+
+
+#text1{
+	display: block;
+	font-size: 78px;
+	color: white;
+	-webkit-box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+	-moz-box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+	box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+    margin:0 auto;
+    text-align:center;
 }

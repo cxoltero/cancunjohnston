@@ -1,8 +1,8 @@
 
-	var action= "click";
-	var speed = "500";
+	var action= "hover";
+	var speed = "200";
 $(document).ready(function(){
-	// Get next element after question aka answer
+	// Start carousel after click
 	$("li.category").on(action, function(){
 		// select all other answers
 		$(this).next().slideToggle(speed)
