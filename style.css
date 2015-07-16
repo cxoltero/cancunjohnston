@@ -190,7 +190,6 @@ span{
 
 
 
-
 #text1{
 	display: block;
 	font-size: 78px;
@@ -202,11 +201,24 @@ span{
     text-align:center;
 }
 
-
+#directionsForm, #map{
+	display: block;
+	margin-top: 140px;
+	clear: both;
+	width: 80%;
+	margin-left: 10%;
+}
 
 
 #theFrame{
 	margin-top: 50px;
 	margin-bottom: 150px;
 	text-align: center;
+}
+
+@media screen and (max-width: 763px) {
+    #map {
+        margin-top: 10px;
+    }
+
 }
