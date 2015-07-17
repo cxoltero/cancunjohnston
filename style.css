@@ -121,6 +121,14 @@ span{
 	font-weight: bold;
 }
 
+.indent{
+	margin-left: 75px;
+}
+
+.indent li{
+	list-style: none;
+}
+
 /*###########################   lunch menu     ##################################*/
 .menuItems p{
 	font-size: 1.8rem;
