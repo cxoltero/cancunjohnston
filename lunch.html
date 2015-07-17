@@ -1,52 +1,169 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-	<title>Lunch Menu</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Lunch Menu</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
 </head>
 <body>
-<div class="back">
+<nav class="navbar-inverse navbar-fixed-top navix" >
+	<div class="container lunch">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#burguer">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand active" href="index.html" id="logo" title="Cancun Mexican Restaurant"><img style="max-width:100px; margin-top: -17px; "
+             src="images/logofinal.png"></a>
+	    </div>
+
+	    <!-- <! Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="burguer">
+	      <ul class="nav navbar-nav">
+	        <!-- <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li> -->
+	        <!-- <li><a href="#">About</a></li> -->
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menus <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="lunch.html">Lunch Menu</a></li>
+	            <li><a href="dinner.html">Dinner Menu</a></li>
+	            <li><a href="#">Drinks Menu</a></li>
+
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="galleryVenue.html">Venue</a></li>
+	            <li><a href="galleryFood.html">Food</a></li>
+	            <li><a href="galleryBirthday.html">Birthdays</a></li>
+
+	          </ul>
+	        </li>
+	        <li><a href="#">Events</a></li>
+	        <li><a href="directions.html">Directions</a></li>
+	        <li><a href="#myModal" role="button" data-toggle="modal">Contact Us</a></li>
+	        <li ><a href="tel:1-401-232-0844"  id="phoneNum"> <span class="glyphicon glyphicon-earphone "></span>  Order Now</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</div>
+</nav>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">We'd Love to Hear From You</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><label>Phone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>	
 <div class="container">
-	<div class="lunchBody">
+	<div class="menuBody">
 	<div class="row">
-		<h1 class="lunchHeading">Lunch Menu</h1>
+		<h1 class="menuHeading">Lunch Menu</h1><hr>
 		<div class="col-sm-6">
-				<div class="menuItems">
-					<h3>Cancun Burrito</h3>
-					<p>Out signature burrito. A 10" tortilla stuffed with rice, beans, cheese, and your choice of ground beef, chicken, shredded beef, or pork. Topped with mild sauce, pico de gallo, Queso Fresco, and sour cream		7.99</p><br/>
-					<h3>Lunch Burrito</h3>
-					<p>A 10" tortilla stuffed with rice, beans, cheese, scrambled eggs, and pico de gallo. Topped with mil tomatillo salsa, pico de gallo, Queso Fresco, and sour cream.	7.99</p><br/>
-					<h3>Veggie Burrito</h3>
-					<p>Flour tortilla stuffed with rice, whole black beans, grilled onions, lettuce, and peppers. Served with green tomatillo sauce, pico de gallo, sour cream, and Queso Fresco.	6.99</p><br/>
-				</div>
-		</div>
-		<div class="col-sm-6">
-				<div class="menuItems">
-					<h3>Enchiladas Suizas</h3>
-					<p>Two soft corn tortillas filled with your choice of chicken, ground beef, cheese, or pork. Served with rice and beans. Topped with tomatillo sauce and sour cream.	7.49</p><br/>
-					<img src="images/enchiladas.jpg">
-					<h3>Mole Enchiladas</h3>
-					<p>Two soft corn tortillas stuffed with chicken breast. Topped with our homemade Mole Salsa. Served with rice and refried beans.	7.79</p><br/>
-					<h3>Spinach Enchiladas</h3>
-					<p>Two soft corn tortillas filled with fresh spinach and cheese. Covered with green tomatillo sauce, and garnished with cour cream and pico de gallo.	7.55</p>
-				</div>
 			<div class="menuItems">
+				<div class="burritos">
+				<h3>Cancun Burrito</h3>
+				<p>Out signature burrito. A 10" tortilla stuffed with rice, beans, cheese, and your choice of ground beef, chicken, shredded beef, or pork. Topped with mild sauce, pico de gallo, Queso Fresco, and sour cream		7.99</p><br/>
+				<h3>Lunch Burrito</h3>
+				<p>A 10" tortilla stuffed with rice, beans, cheese, scrambled eggs, and pico de gallo. Topped with mil tomatillo salsa, pico de gallo, Queso Fresco, and sour cream.	7.99</p><br/>
+				<h3>Veggie Burrito</h3>
+				<p>Flour tortilla stuffed with rice, whole black beans, grilled onions, lettuce, and peppers. Served with green tomatillo sauce, pico de gallo, sour cream, and Queso Fresco.	6.99</p><br/>
+				</div>
+
+
+				<div class="quesadillas">
+
 				<h3>Baja Quesadilla</h3>
 				<p>Flour tortilla stuffed with your choice of ground beef, shredded chicken, shredded beef, or pork. Served with sour cream, lettuce, and pico de gallo.	7.55</p><br/>
 				<h3>Grilled Chicken Quesadilla</h3>
 				<p>Flour tortilla stuffed with grilled chicken breast and melted cheese. SServed with sour cream, lettuce, and pico de gallo.	7.99</p><br/>
+
+				<h3>Cancun Chimichanga</h3>
+				<p>Deep fried flour tortilla wrapped with cheese and your choice of chicken, ground beef, or pork. Served with refried beans and rice, topped with lettuce, tomatoe, and sour cream.  7.65</p><br/>
+
+				<h3>Taco Salad</h3>
+				<p>Fresh iceberg lettuce with your choice of ground beef, chicken, shredded beef, or pork. topped with tomatoes, cheese, black beans, and sour cream. Served in a crispy shell   7.99</p><br/>
+
+				<h3>Combination Platters</h3>
+				<h6>All combination platters are sere with rice and refried beans. Choice of fillings are: <br/><center>Ground beef | Chicken | Shredded Beef | Pork | Spinach </center></h6>
+				<p class="combos">Combo Uno (Choice of One)<br/>
+				 					Combo Dos (Choice of Two)<br/>
+				 					Combo Tres (Choice of Three)</p><br/>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="menuItems">
+				<div class="enchiladas">
+				<h3>Enchiladas Suizas</h3>
+				<p>Two soft corn tortillas filled with your choice of chicken, ground beef, cheese, or pork. Served with rice and beans. Topped with tomatillo sauce and sour cream.	7.49</p><br/>
+				<img src="images/enchiladas.jpg">
+
+				<h3>Mole Enchiladas</h3>
+				<p>Two soft corn tortillas stuffed with chicken breast. Topped with our homemade Mole Salsa. Served with rice and refried beans.	7.79</p><br/>
+
+				<h3>Doble Enchiladas</h3>
+				<p>Two soft corn tortillas stuffed with your choice of chicken, ground beef, shredded beef, or pork. Topped with our home made Salsa Roja. Served with rice and refried beans.	7.79</p><br/>
+
 				<h3>Spinach Enchiladas</h3>
 				<p>Two soft corn tortillas filled with fresh spinach and cheese. Covered with green tomatillo sauce, and garnished with cour cream and pico de gallo.	7.55</p>
+
+				</div>
+
+
+			</div>
+
+			<div class="menuItems">
+				<div class="specialties">
+					<h3>Lunch Fajitas</h3>
+					<p>Sizzling tender pieces of your choice of meat, sauteed with fresh green peppers and onions. Served with tortillas, sour cream and pico de gallo.</p>
+					<p>Chicken or Steak  8.99   |  Shrimp  9.99   |  Mixed (2) 9.99</p><br/>
+
+					<h3>San Diego Shrimp Tacos (3)</h3>
+					<p>Shrimp sauteed ini our original blend of garlic and white wine. Topped with our homemade coleslaw, chipote mayo, and fresh avocado. Served with rice and refried beans	9.99</p><br/>
+
+					<h3>All-American Tacos (3)</h3>
+					<p>Three crispy corn tortillas topped with your choice of ground beef, shredded beef, shredded chicken, or pork. Served with lettuce, tomatoes, and cheese.  6.99</p><br/>
+				</div>
 			</div>
 		</div>
 	</div>
 	</div>
 </div>
-</div>
+<footer class="navbar-inverse navbar-bottom">
+	<address><small>
+		<span><a href="https://www.facebook.com/CancunMexicanRestaurant" target="_blank"><img src="images/fb.png" alt="logo"></a>    <a href="http://www.yelp.com/biz/canc%C3%BAn-family-mexican-restaurant-johnston-2" target="_blank"><img src="images/yp.png" alt="logoyp"></a>     <a href="https://twitter.com/cancunjohnston" target="_blank"><img src="images/twitter.png" alt="logotw"></a></span><br/>
+		Cancun Mexican Family Restaurant  |   175 Putnam Pk.(Rt 44)  |   Johnston RI, 02919</br>
+		<a href="mailto:cancunjohnston@gmail.com"><span class="glyphicon glyphicon-envelope" > Email Us</span></a></small>
+	</address>
+</footer>
 </body>
 </html>

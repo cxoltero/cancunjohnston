@@ -3,99 +3,75 @@
 	padding: 0;
 }
 body, html{
-
+	background-color: #fff;
+	padding-bottom: 70px;
+	min-height: 900px;
+	height: 50%;
+}
+small{
+	font-size: 11px;
 }
 
+.icon-prev, .icon-next{
+	font-size: 100px !important;
+	color: white;
+}
+
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*###########################    Navigation     ##################################*/
 header{
-	background-color: #ff3385;
-	height: 20%;
 	position: relative;
-	min-height: 100px;
+	min-height: 75px;	
 }
-#mainLogo{
-
-	/*width: 20%;*/
-	/*min-width: 200px;*/
-/*	margin-left: 40%;
-	display: inline-block;
-	border: 5px solid white;*/
+#phoneNum{
+	color: #DF0174;
+	margin-left: 10%;
+	float: right;
+	font-weight: bold;
 }
-
-.mainLogo img{
-
-}
+/*###########################    Index Main     ##################################*/
 .main{
-  background: url(images/8.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.8;
-  height: 760px;
+	margin-top: 0;
+	padding-top: 5%;
 }
 
 footer{
-	border: 2px solid yellow;
-	text-align: center
-}
-
-
-#phoneNum{
-	font-weight: bold;
-}
-/*###########################    Navigation     ##################################*/
-#myNavbar{
-	color:red;
-}
-/*#phone span{
-	font-size: 1em;
-}
-
-#phone{
-	display: inline-block;
-	width: 28%;
-	width: auto;
-}
-#phone a{
+	text-align: center;
 	color: white;
-	font-size: 3.6rem;
-	position: absolute;
-	margin-top: 2%;
-	margin-left: 25%;
-	background: #333;
-	padding: 5px 10px;
-	border-radius: 5px;
-}
-#phone a:hover{
-	color: orange;
-	text-decoration: none;
-	font-weight: bold;
-}
-#logofinal{
-	margin-left: 35%;
-	height: auto;
-
-}*/
-/*
-.navigation{
-	margin-top: 110px;
-
+	padding: 5px;
+	list-height: 1rem;
+	margin-top: 15%;
 }
 
-.navigation li{
+#myFrame{
+	margin-top: 10px;
 }
 
-.navigation li a{
-	margin-left: 100px;
-	color: white;
-}
+#hours{
 
-.brand img{
-	height: 120px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}*/
+}
 
 /*###########################   menu     ##################################*/
 .menuItems{
@@ -110,32 +86,49 @@ footer{
 	background-color: rgba(255, 51, 133, 1);
 	box-shadow: 0px 0px 15px #888888
 }
-.lunchHeading{
+
+
+.menuHeading{
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	top: 15px;
-	font-size: 7rem;
-	height: 150px;
+	font-size: 5rem;
 	margin-top: 0;
-	background: green;
-	color: white;
 	padding-top: 3%;
+	color: #7A2B7C;
+}
+.heading{
+	font-family: 'Lobster', cursive;
+	/*text-align: center;*/
+	top: 15px;
+	font-size: 5rem;
+	/*height: 150px;*/
+	margin-top: 0;
+	/*background: green;*/
+	/*color: white;*/
+	padding-top: 3%;
+	color: #7A2B7C;
 }
 .menuItems img{
 	width: 90%;
 	height: 200px;
 	margin-left: 5%;
 }
-.back{
-  background: url(images/palms.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.8;
-}
+
 span{
 	font-size: 1.5rem;
+}
+
+.combos{
+	font-weight: bold;
+}
+
+.indent{
+	margin-left: 75px;
+}
+
+.indent li{
+	list-style: none;
 }
 
 /*###########################   lunch menu     ##################################*/
@@ -143,9 +136,14 @@ span{
 	font-size: 1.8rem;
 }
 
-.lunchBody{
+
+.menuBody{
+	margin-top: 50px;
+	widows: 100%;
 	background-color: white;
-	overflow: auto;
+	overflow: hidden;
+	background-image: ;
+
 }
 
 /*###########################   diner menu     ##################################*/
@@ -176,6 +174,69 @@ span{
 }
 #appetizers{
 	background-color: red;
+}
+
+/*###########################   Accordion Slidder   ##################################*/
+
+.faq li{
+	padding: 20px;
+}
+
+.faq li.category{
+	background: #eee;
+	font-weight: bold;
+	font-size: 120%;
+	border-bottom: 1px #ddd solid;
+	cursor: pointer;
+}
+
+.faq li.items{
+	background: #ddd;
+	display: none;
+}
+
+#hours{
+	color: #DF0174;
+	font-size: 2rem;
+}
+
+
+
+#text1{
+	display: block;
+	font-size: 78px;
+	color: white;
+	-webkit-box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+	-moz-box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+	box-shadow: inset 10px 10px 77px 0px rgba(0,0,0,1);
+    margin:0 auto;
+    text-align:center;
+}
+
+#directionsForm, #map{
+	display: block;
+	margin-top: 140px;
+	clear: both;
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+#theFrame{
+	margin-top: 50px;
+	margin-bottom: 150px;
+	text-align: center;
+}
+
+@media screen and (max-width: 763px) {
+	header{
+		margin-top: -150px;
+	}
+
+    #map {
+        margin-top: 10px;
+    }
+
 }
 
 
