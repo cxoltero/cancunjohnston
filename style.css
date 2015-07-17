@@ -9,7 +9,7 @@ body, html{
 	height: 50%;
 }
 small{
-	font-size: 8px;
+	font-size: 11px;
 }
 
 .icon-prev, .icon-next{
@@ -217,8 +217,14 @@ span{
 }
 
 @media screen and (max-width: 763px) {
+	header{
+		margin-top: -150px;
+	}
+
     #map {
         margin-top: 10px;
     }
 
 }
+
+
